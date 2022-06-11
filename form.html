@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+       <label for="name">姓名</label>
+       <input type="text" id="name" placeholder="請輸入中文姓名"  required>
+       <br>
+       <label for="email">EMAIL</label>
+       <input type="text" id="name" placeholder="請輸入EMAIL"  required>
+       <br>
+       <label for="pw">密碼</label>
+       <input type="password" id="pw" placeholder="請輸入密碼" required>
+       <br>
+       <label for="birth">生日</label>
+       <input type="date" id="birth">
+       <br>
+       <label for="number">訂購數量</label>
+       <input type="number" id="number" placeholder="1" min="1" max="10">
+       <br>
+       <label>性別</label>
+       <input type="radio" name="gender" id="male" name="男">
+       <label for="male">男</label>
+       <input type="radio" name="gender" id="female" name="女">
+       <label for="female">女</label>
+       <input type="radio" name="gender" id="unknows" name="不透露" checked>
+       <label for="unknows">不透露</label>
+       <br>
+       <label>從哪裡知道我們的</label>
+       <input type="checkbox" name="knows" id="net" name="網路廣告">
+       <label for="net">網路廣告</label>
+       <input type="checkbox" name="knows" id="Friends" name="朋友介紹">
+       <label for="friends">朋友介紹</label>
+       <input type="checkbox" name="knows" id="dm" name="廣告DM">
+       <label for="dm">廣告DM</label>
+       <input type="checkbox" name="knows" id="suddenly" name="偶然遇見">
+       <label for="suddenly">偶然遇見</label>
+
+       <br>
+       <label for="edu">學歷</label>
+       <select name="edu" id="edu">
+        <option>--請選擇--</option>
+        <option value="國小">國小</option>
+        <option value="國中">國中</option>
+        <option value="高中/職">高中/職</option>
+        <option value="大專院校">大專院校</option>
+        <option value="研究所以上">研究所以上</option>
+       </select>
+       <br>
+       <br>
+       <label for="content">想跟我們說的悄悄話~~</label>
+       <br>
+       <textarea name="content" id="content" cols="60" rows="10" placeholder="快來跟我們聊聊天"></textarea>
+       <br>
+       <input type="submit" value="OK 我完成了!">
+       <input type="reset" value="重新輸入資料">
+       <input type="button" value="我要再加入其他商品">
+       
+       <!-- <br><br> 另一種打法
+       <button type="submit"> OK 我完成了! </button>
+       <button type="reset"> 重新輸入資料 </button>
+       <button type="button"> 我要再加入其他商品 </button>
+       -->
+    </form>
+</body>
+</html>
