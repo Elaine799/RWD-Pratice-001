@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- 選取器 (三種): 標籤 tag、類別 class、ID id-->
+    <style>
+        /* 標籤tag */
+        h1{
+            color: red;
+        }
+        /* 類別class ，要在下面的p 後面加上去*/
+        .abc{
+            color: antiquewhite;
+        }
+        /* 要打: 要加\ */
+        .abc\:1{
+            color: beige;
+        }
+        /* ID，要在下面的P後面加上去 */
+        #xyz{
+            color:burlywood ;
+        }
+        /* ID 選取器只可使用一次 */
+
+        /* CSS Specific權重(物以稀為貴)
+        Css 選取的元素越少，權重越重，愈優先使用
+        嵌入式 > ID > CLASS > TAG */
+
+    </style>
+</head>
+<body>
+   <h1 class="abc" id="xyz" style="color:blue">title</h1> 
+   <!-- 因嵌入式優先使用，故title最後的呈現會是blue -->
+   <p class="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, facere qui architecto nihil quo, corporis ad tenetur aliquid nam saepe sint dolorum ratione tempora rerum ex culpa illum, officia corrupti?</p>
+   <p class="abc:1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque asperiores, cupiditate sapiente repudiandae praesentium ducimus eveniet! Praesentium incidunt ea, in cum rem unde sequi quasi accusantium nobis. Corrupti, iste!</p>
+   <p id="xyz">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iste voluptatem. Impedit repellat iusto aperiam repellendus veritatis nostrum perspiciatis dolor sit ratione adipisci a unde nisi, sunt reprehenderit culpa. Quo?</p>
+</body>
+</html>
